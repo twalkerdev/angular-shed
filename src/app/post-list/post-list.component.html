@@ -1,0 +1,18 @@
+<h1>{{ featuredTitle }}</h1>
+<ul class="page-links">
+  <button
+    *ngFor="let pageNum of pageRange"
+    class="page-number"
+    [ngClass]="setPageSelectorStyle(pageNum)"
+    (click)="setCurPage(pageNum)"
+    (keyup)="setCurPage(pageNum)"
+    focusable="true">
+    {{ pageNum }}
+  </button>
+</ul>
+<div *ngFor="let post of shownPosts" class="card post-card">
+  <h3>{{ post['title'] }}</h3>
+  <p>{{ post['userId'] }}</p>
+  <p>{{ post['body'] }}</p>
+  <hr />
+</div>

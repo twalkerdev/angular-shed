@@ -1,0 +1,31 @@
+<div class="content">
+  <h1>{{ title }} works!</h1>
+
+  <h2>Lifecycle Methods</h2>
+
+  <h3>OnInit and OnDestroy</h3>
+
+  <p>An example of the "ngOnInit" method gives us a counter.</p>
+
+  <p>
+    But if we navigate away, we still see the console logging the counter, so we
+    use ngOnDestroy as well...
+  </p>
+
+  <h4>Voila!!!</h4>
+
+  <h3>OnChanges</h3>
+
+  <p>An example of updating info based on a changing value</p>
+  <p>Anytime the number is a factor of 5, text will appear that notifies</p>
+
+  <h3>{{ count }}</h3>
+  <h4>Does it divide by five?</h4>
+  <app-is-five [count]="count"></app-is-five>
+
+  <h3>To be continued...</h3>
+  <p>
+    More lifecycle methods are ngDoCheck, ngAfterContentInit,
+    ngAfterContentChecked, ngAfterViewInit, and ngAfterViewChecked to go are:
+  </p>
+</div>

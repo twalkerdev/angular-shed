@@ -1,0 +1,27 @@
+.post-card {
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.01); 
+}
+
+.page-links {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.page-number {
+  display: inline-block;
+  color:#999;
+  padding-inline-end: 1.5rem;
+}
+.page-number.active {
+  color: blue;
+  font-weight: bold;
+}
+
+.page-number:hover {
+  cursor: pointer;
+  color: blue;
+}
